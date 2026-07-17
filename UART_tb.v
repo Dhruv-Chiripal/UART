@@ -44,7 +44,7 @@ module uart_tb();
         #10;             
         start_tx = 0;
         
-        #1100000;        // FIXED: 1.1 ms delay in nanoseconds format!
+        #1100000;        // 1.1 ms delay in nanoseconds format!
         
         // --- Second Data: 'Z' (0x5A) ---
         tx_data = 8'h5A; 
@@ -52,7 +52,7 @@ module uart_tb();
         #10;
         start_tx = 0;
         
-        #1100000;        // FIXED: 1.1 ms delay
+        #1100000;        //1.1 ms delay
         
         #5000;
         $display("DONE");
